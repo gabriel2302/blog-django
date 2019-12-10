@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Aqui adicionamos os arquivos estáticos, na pasta static (css, js..)
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
 
 #Aqui adicionamos um diretório para imagens
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
