@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +151,5 @@ MESSAGE_TAGS = {
 
 #para adicionar o campo de comentários no admin 
 INSTALLED_APPS += ('django_summernote', )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
